@@ -1,0 +1,35 @@
+.main {
+  ul {
+    list-style-type: none;
+  }
+
+  table {
+    background: white;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(139, 139, 139);
+
+
+    th {
+      background: #ccc;
+      border: 1px solid rgb(139, 139, 139);
+      padding: 8px;
+      text-align: center;
+    }
+    td{
+      padding: 8px;
+
+    }
+    tr {
+      transition: 0.3s all ease-in-out;
+
+      &:nth-child(even) {
+        background: #efefef;
+      }
+
+      &:hover {
+        background: #d1d1d1;
+      }
+    }
+  }
+}

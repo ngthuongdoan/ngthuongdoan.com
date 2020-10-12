@@ -1,0 +1,35 @@
+.main ul {
+  list-style-type: none;
+}
+
+.main table {
+  background: white;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #8b8b8b;
+}
+
+.main table th {
+  background: #ccc;
+  border: 1px solid #8b8b8b;
+  padding: 8px;
+  text-align: center;
+}
+
+.main table td {
+  padding: 8px;
+}
+
+.main table tr {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.main table tr:nth-child(even) {
+  background: #efefef;
+}
+
+.main table tr:hover {
+  background: #d1d1d1;
+}
+/*# sourceMappingURL=ct428.css.map */

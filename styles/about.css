@@ -1,0 +1,22 @@
+.main h1 {
+  font-family: "Sansita Swashed", cursive;
+}
+
+.main h3 {
+  margin: 10px auto;
+}
+
+.main .technical__content, .main .softskill__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin-left: 10px;
+}
+
+.main .technical__grid p, .main .softskill__grid p {
+  margin: 5px 20px;
+}
+/*# sourceMappingURL=about.css.map */

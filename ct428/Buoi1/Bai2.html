@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng ký</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản mới</h2>
+      <br />
+      <p>Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới</p>
+      <br />
+      <form action="" method="GET">
+        <table>
+          <tr>
+            <td><label for="username">Tên đăng nhập</label></td>
+            <td><input type="text" id="username" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Mật khẩu</label></td>
+            <td><input type="password" id="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="confirm-password">Gõ lại mật khẩu</label></td>
+            <td><input type="password" id="confirm-password" /></td>
+          </tr>
+          <tr>
+            <td><label for="avatar">Hình đại diện</label></td>
+            <td><input type="file" id="avatar" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Giới tính</label></td>
+            <td>
+              <input type="radio" name="gender" id="nam" />
+              <label for="nam">Nam</label>
+              <input type="radio" name="gender" id="nu" />
+              <label for="nu">Nữ</label>
+              <input type="radio" name="gender" id="khac" />
+              <label for="khac">Khác</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="job">Nghề nghiệp</label></td>
+            <td>
+              <select name="job" id="">
+                <option value="Học sinh" selected>Học sinh</option>
+                <option value="Giảng viên">Giảng viên</option>
+                <option value="Bảo vệ">Bảo vệ</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Sở thích</label></td>
+            <td>
+              <input type="checkbox" name="" id="" />
+              <label for="">Thể thao</label>
+              <input type="checkbox" name="" id="" />
+              <label for="">Du lịch</label>
+              <input type="checkbox" name="" id="" />
+              <label for="">Âm nhạc</label>
+              <input type="checkbox" name="" id="" />
+              <label for="">Thời trang</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="button">Đăng ký</button>
+              <button type="button">Làm lại</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

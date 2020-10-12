@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background: url("img/background.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+  min-width: 1266px;
+}
+
+.sidebar {
+  width: 500px;
+  height: 100vh;
+  background: transparent;
+  margin-left: -500px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #d9e4dd;
+}
+
+.sidebar h1 {
+  font-family: "Sansita Swashed", cursive;
+  margin: 100px auto auto 20px;
+}
+
+.sidebar hr {
+  margin: 20px auto 20px 20px;
+}
+
+.sidebar ul {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.sidebar ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fbf7f0;
+  font-weight: bold;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.sidebar ul li:hover {
+  background-color: #414141;
+}
+
+.sidebar ul li:hover a {
+  margin-left: 20px;
+}
+
+.hover-bar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background: transparent;
+  padding: 10px;
+}
+
+.hover-bar img {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  margin: auto 10px;
+  width: 32px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #fbf7f0;
+  margin: 0;
+  padding: 30px 100px;
+  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  overflow: auto;
+}
+
+.main #title {
+  color: #333333;
+  font-family: "Sansita Swashed", cursive;
+  margin-bottom: 20px;
+}
+
+.main hr {
+  color: #555555;
+  opacity: 0.5;
+}
+
+.content {
+  color: #333333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.content__overview {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  overflow: auto;
+}
+
+.content__overview p {
+  width: 80%;
+}
+
+.content__overview ul {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.content__overview ul li {
+  margin: auto 20px;
+}
+
+.content__blog p {
+  font-style: italic;
+}
+
+.social_link {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
