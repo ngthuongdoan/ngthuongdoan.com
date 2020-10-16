@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ĐOÀN NGỌC THƯỞNG</title>
     <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/main.css"/>
-    <link rel="stylesheet" href="../styles/ct428.css"/>
-
-</head>
-<body>
-<div class="sidebar">
-    <h1>Have a nice day!!!</h1>
-    <hr/>
-    <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../about/index.html">ABOUT ME</a></li>
-        <li><a href="../blog/index.html">BLOG</a></li>
-        <li><a href="../contact/index.html">CONTACT</a></li>
-        <li><a href="">CT428 - Lập trình web</a></li>
-    </ul>
-</div>
-<div class="hover-bar">
-    <img
-            alt="hamburger"
-            id="hamburger"
-            src="../styles/icon/hamburger_white.png"
-    />
-</div>
-<div class="main">
-    <ul>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/ct428.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>Have a nice day!!!</h1>
+      <hr />
+      <ul>
+        <li id="home__menu"><a href="../index.html">HOME</a></li>
+        <li id="about__menu"><a href="../about/index.html">ABOUT ME</a></li>
+        <div id="about__submenu">
+          <ul>
+            <li>
+              <a href="../about/index.html#technical">Technical skills</a>
+            </li>
+            <li><a href="../about/index.html#softskill">Soft skills</a></li>
+            <li><a href="../about/index.html#aboutme">Brief information</a></li>
+            <li><a href="../about/index.html#achievement">Achievement</a></li>
+          </ul>
+        </div>
+        <li id="blog__menu"><a href="../blog/index.html">BLOG</a></li>
+        <li id="contact__menu"><a href="../contact/index.html">CONTACT</a></li>
+        <li id="ltw__menu"><a href="">CT428 - Lập trình web</a></li>
+      </ul>
+    </div>
+    <div class="hover-bar">
+      <img
+        alt="hamburger"
+        id="hamburger"
+        src="../styles/icon/hamburger_white.png"
+      />
+    </div>
+    <div class="main">
+      <ul>
         <li>Họ và tên: Đoàn Ngọc Thưởng</li>
         <li>MSSV: B1704776</li>
         <li>Nhóm: Chiều 6</li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <table>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <table>
         <thead>
-        <th>Buổi thực hành</th>
-        <th>Buổi 1</th>
-        <th>Buổi 2</th>
-        <th>Buổi 3</th>
-        <th>Buổi 4</th>
-        <th>Buổi 5</th>
+          <th>Buổi thực hành</th>
+          <th>Buổi 1</th>
+          <th>Buổi 2</th>
+          <th>Buổi 3</th>
+          <th>Buổi 4</th>
+          <th>Buổi 5</th>
         </thead>
         <tbody>
-        <tr>
+          <tr>
             <th>Nội dung</th>
             <td>
-                <a href="Buoi1/Bai1.html" target="_blank">Bài 1 - Lịch làm việc</a>
-                <br>
-                <a href="Buoi1/Bai2.html" target="_blank">Bài 2 - Form đăng ký</a>
+              <a href="Buoi1/Bai1.html" target="_blank"
+                >Bài 1 - Lịch làm việc</a
+              >
+              <br />
+              <a href="Buoi1/Bai2.html" target="_blank">Bài 2 - Form đăng ký</a>
             </td>
             <td><i>Chưa có nội dung</i></td>
             <td><i>Chưa có nội dung</i></td>
             <td><i>Chưa có nội dung</i></td>
             <td><i>Chưa có nội dung</i></td>
-        </tr>
+          </tr>
         </tbody>
-    </table>
-</div>
-<script src="../scripts/index.js"></script>
-</body>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>

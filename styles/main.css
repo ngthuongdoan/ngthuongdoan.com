@@ -32,7 +32,7 @@ body {
 
 .sidebar h1 {
   font-family: "Sansita Swashed", cursive;
-  margin: 100px auto auto 20px;
+  margin: 10px auto auto 20px;
 }
 
 .sidebar hr {
@@ -67,6 +67,14 @@ body {
 
 .sidebar ul li:hover a {
   margin-left: 20px;
+}
+
+.sidebar #about__submenu {
+  display: none;
+}
+
+.sidebar #about__submenu a {
+  font-size: 14px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

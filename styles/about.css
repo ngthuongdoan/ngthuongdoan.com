@@ -1,3 +1,7 @@
+.main {
+  overflow-x: hidden;
+}
+
 .main h1 {
   font-family: "Sansita Swashed", cursive;
   margin-bottom: 20px;
