@@ -1,0 +1,70 @@
+.main {
+  overflow-x: hidden;
+}
+
+.main h1 {
+  font-family: "Sansita Swashed", cursive;
+  margin-bottom: 20px;
+}
+
+.main h3 {
+  margin: 10px 0;
+}
+
+.main .technical__content,
+.main .softskill__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin-left: 10px;
+}
+
+.main .technical__grid p,
+.main .softskill__grid p {
+  margin: 5px 20px;
+}
+
+.main .softskill ul {
+  margin-left: 10px;
+  list-style-type: "- ";
+}
+
+.main .aboutme p {
+  margin: 5px 20px;
+}
+
+.main .aboutme video {
+  margin: 20px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.back_to_top {
+  opacity: 0.5;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: black;
+  color: #444;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+.back_to_top img {
+  width: 90%;
+}
+
+.back_to_top:hover {
+  background: #161616;
+}
+/*# sourceMappingURL=about.css.map */

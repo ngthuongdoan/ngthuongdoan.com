@@ -54,8 +54,23 @@ body {
     }
   }
   #about {
+    &__menu {
+      &:hover {
+        #about__submenu {
+          display: block;
+        }
+      }
+    }
     &__submenu {
       display: none;
+      position: absolute;
+      transition: 1s all ease-in-out;
+      li {
+        background-color: rgb(19, 42, 63);
+        &:hover {
+          background-color: #414141;
+        }
+      }
       a {
         font-size: 14px;
       }
@@ -142,4 +157,18 @@ body {
 
 .social_link {
   cursor: pointer;
+}
+
+.preloading {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #172027;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

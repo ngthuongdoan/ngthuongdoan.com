@@ -69,8 +69,23 @@ body {
   margin-left: 20px;
 }
 
+.sidebar #about__menu:hover #about__submenu {
+  display: block;
+}
+
 .sidebar #about__submenu {
   display: none;
+  position: absolute;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+
+.sidebar #about__submenu li {
+  background-color: #132a3f;
+}
+
+.sidebar #about__submenu li:hover {
+  background-color: #414141;
 }
 
 .sidebar #about__submenu a {
@@ -179,5 +194,21 @@ body {
 
 .social_link {
   cursor: pointer;
+}
+
+.preloading {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #172027;
+}
+
+.preloading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=main.css.map */

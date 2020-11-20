@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+th {
+  background-color: #495464;
+  color: #f4f4f2;
+  text-align: center;
+  padding: 12px;
+}
+
+table {
+  border: none;
+}
+
+td {
+  margin: 0;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  text-align: center;
+  padding: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+td:hover {
+  background-color: #e8e8e8;
+}
+
+.noData {
+  background-color: #bbbfca;
+}
+/*# sourceMappingURL=bai1.css.map */

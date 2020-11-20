@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 10px;
+  border: 1px solid red;
+  background-color: #cacaca;
+}
+
+.container h1 {
+  color: red;
+  font-size: 16px;
+  padding: 20px auto;
+  border-bottom: 1px dotted red;
+  text-align: center;
+}
+
+.container table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+.container p {
+  margin: 10px;
+  width: 500px;
+}
+
+.container td,
+.container th {
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.container th {
+  background-color: #bebcbc;
+}
+
+.container td {
+  background-color: white;
+}
+
+.container form {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container input[type="submit"] {
+  text-align: center;
+  border: none;
+  display: inline-block;
+  background-color: #8d8a8a;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: serif;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px 10px white;
+          box-shadow: 0px 0px 10px 10px white;
+}
+/*# sourceMappingURL=dssp.css.map */
