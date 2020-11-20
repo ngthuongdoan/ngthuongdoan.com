@@ -9,7 +9,7 @@
   <body>
     <?php
     if(isset($_GET['action'])) echo "<p>Đăng ký thành công</p>";
-    if(isset($_COOKIE["matv"])) header('Location: TTCN.php');
+    if(isset($_SESSION["matv"])) header('Location: TTCN.php');
     ?>
     <form action="dangnhap.php" method="post">
       <table>

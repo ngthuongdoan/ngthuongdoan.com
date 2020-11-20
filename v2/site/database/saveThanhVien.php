@@ -1,11 +1,11 @@
 <?php
 foreach ($_POST as $data => $value) {
     if ($data == 'sothich') {
-        setcookie($data, implode(",", $value));
+        setSESSION($data, implode(",", $value));
     } else if ($data == 'matkhau') {
-        setcookie($data, md5($value));
+        setSESSION($data, md5($value));
     } else {
-        setcookie($data, $value);
+        setSESSION($data, $value);
     };
 };
 header("Location: /site/action/ct428/Buoi3/Bai1/ttcn.php");

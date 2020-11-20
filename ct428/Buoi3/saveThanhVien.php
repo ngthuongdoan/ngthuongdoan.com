@@ -10,6 +10,7 @@ $hinhanh ="'".$path."'";
 $gioitinh="'".$_POST["gioitinh"]."'";
 $nghenghiep="'".$_POST["nghenghiep"]."'";
 $sothich="'".implode(",",$_POST["sothich"])."'";
+
 array_push($data, $tendangnhap);
 array_push($data,$matkhau);
 array_push($data,$hinhanh);

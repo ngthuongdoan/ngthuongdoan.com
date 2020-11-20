@@ -1,4 +1,3 @@
 <?php
-setcookie("matv", "", time()-3600);
-setcookie("tendangnhap", "", time()-3600);
+session_destroy(); 
 header("Location: Bai2.php");
