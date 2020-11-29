@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,12 +14,14 @@
 
 <body>
     <?php
-    session_start();
+
     if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
-    $conn = new mysqli("localhost", "root", "rootpassword", "buoi3") or die;
-    $conn->set_charset("utf8");
-    $sql = "SELECT * FROM sanpham WHERE idsp=" . $_GET["id"] . "";
+    include_once "connection.php";
+    openconnect();
+    $id = $_GET["id"];
+    $sql = "SELECT * FROM sanpham WHERE idsp=$id";
     $result = $conn->query($sql);
+    closeconnect();
     while ($row = $result->fetch_assoc()) {
         echo '
     <div class="container">
@@ -36,7 +41,7 @@
             </tr>
             <tr>
                 <td><label for="">Chi tiết sản phẩm</label></td>
-                <td><textarea name="chitietsp" cols="30" rows="10" value="' . $row["chitietsp"] . '"></textarea></td>
+                <td><textarea name="chitietsp" cols="30" rows="10">' . $row["chitietsp"] . '</textarea></td>
             </tr>
             <tr>
                 <td><label for="confirm-password">Giá sản phẩm</label></td>

@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +14,7 @@
 <body>
   <div class="container">
     <?php
-    session_start();
+
     echo "<h1>Chào bạn " . $_SESSION["tendangnhap"] . "</h1>";
     ?>
     <p>Danh sách sản phẩm của bạn là: </p>
@@ -24,11 +27,14 @@
       </thead>
       <tbody>
         <?php
+
         if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
-        $conn = new mysqli("localhost", "root", "rootpassword", "buoi3");
-        $conn->set_charset("utf8");
-        $sql = "SELECT * FROM sanpham WHERE idtv=" . $_SESSION["matv"] . "";
+        include_once "connection.php";
+        openconnect();
+        $idtv = $_SESSION['matv'];
+        $sql = "SELECT * FROM sanpham WHERE idtv=$idtv";
         $result = $conn->query($sql);
+        closeconnect();
         $i = 0;
         if ($result->num_rows > 0) {
           while ($row = $result->fetch_assoc()) {
@@ -45,7 +51,6 @@
         } else {
           echo "<tr><td colspan='5'>Không có sản phẩm</td></tr>";
         }
-
         ?>
       </tbody>
     </table>

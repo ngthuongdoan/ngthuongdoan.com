@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +14,14 @@
 
 <body>
   <?php
-  session_start();
+
   if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
-  $conn = new mysqli("localhost", "root", "rootpassword", "buoi3") or die;
-  $conn->set_charset("utf8");
+  include_once "connection.php";
+  openconnect();
   $updatesql = 'UPDATE sanpham SET(tensp = "' . $_POST["tensp"] . '", chitietsp = "' . $_POST["chitietsp"] . '",giasp = ' . $_POST["giasp"] . ') WHERE idsp=' . $_GET["id"] . '';
 
   $conn->query($updatesql);
-
+  closeconnect();
   header("Location: Bai3_DSSP.php")
   ?>
 </body>

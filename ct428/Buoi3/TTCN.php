@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,18 +14,13 @@
 <body>
     <div class="container">
         <?php
-        session_start();
-
-        if (!isset($_SESSION['matv'])) {
-            header("Location: Bai2.php");
-        } else {
-        }
-
-        $conn = new mysqli("localhost", "root", "rootpassword", "buoi3") or die;
-        $conn->set_charset("utf8");
+        include_once "connection.php";
+        openconnect();
         echo "<h1>Chào bạn " . $_SESSION["tendangnhap"] . "</h1>";
-        $sql = "SELECT * FROM thanhvien WHERE id=" . $_SESSION['matv'] . "";
+        $id = $_SESSION['matv'];
+        $sql = "SELECT * FROM thanhvien WHERE id=$id";
         $result = $conn->query($sql);
+        closeconnect();
         echo "<table>";
         while ($row = $result->fetch_assoc()) {
             echo "<tr><td><img width='200px' src='" . $row["hinhanh"] . "'></td>";
@@ -32,7 +30,6 @@
             echo "<p><b>Nghề nghiệp: </b>" . $row['nghenghiep'] . "</p>";
             echo "<p><b>Sở thích: </b>" . $row['sothich'] . "</p>";
         }
-        $conn->close();
         ?>
         <a href="Bai3_ThemSP.php">Thêm sản phẩm</a>
         <a href="Bai3_DSSP.php">Danh sách sản phẩm</a>

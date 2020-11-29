@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +14,6 @@
 
 <body>
   <?php
-  session_start();
   if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
   ?>
   <div class="container">

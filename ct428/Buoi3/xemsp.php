@@ -1,3 +1,6 @@
+<?php
+include_once "clearcache.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +12,15 @@
 
 <body>
     <?php
-    session_start();
-    if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
-    $conn = new mysqli("localhost", "root", "rootpassword", "buoi3") or die;
-    $conn->set_charset("utf8");
 
-    $sql = "SELECT * FROM sanpham WHERE idsp = " . $_GET["id"] . "";
+    if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
+    include_once "connection.php";
+    openconnect();
+    $id = $_GET["id"];
+    $sql = "SELECT * FROM sanpham WHERE idsp = $id";
 
     $result = $conn->query($sql);
+    closeconnect();
     while ($row = $result->fetch_assoc()) {
         echo "<p><b>ID: </b> " . $row["idsp"] . "</p>";
         echo "<p><b>Tên: </b> " . $row["tensp"] . "</p>";
