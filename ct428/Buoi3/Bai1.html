@@ -16,28 +16,44 @@
         action="saveThanhVien.php"
         method="POST"
         enctype="multipart/form-data"
+        id="form"
       >
         <table>
           <tr>
             <td><label for="username">Tên đăng nhập</label></td>
-            <td><input type="text" id="username" name="tendangnhap" /></td>
+            <td>
+              <input type="text" id="username" name="tendangnhap" required />
+              <p id="username-error"></p>
+            </td>
           </tr>
           <tr>
             <td><label for="password">Mật khẩu</label></td>
-            <td><input type="password" id="password" name="matkhau" /></td>
+            <td>
+              <input type="password" id="password" name="matkhau" required />
+              <p id="password-error"></p>
+            </td>
           </tr>
           <tr>
             <td><label for="confirm-password">Gõ lại mật khẩu</label></td>
-            <td><input type="password" id="confirm-password" /></td>
+            <td>
+              <input type="password" id="confirm-password" required />
+              <p id="confirm-error"></p>
+            </td>
           </tr>
           <tr>
             <td><label for="avatar">Hình đại diện</label></td>
-            <td><input type="file" id="avatar" name="hinhanh" /></td>
+            <td><input type="file" id="avatar" name="hinhanh" required /></td>
           </tr>
           <tr>
             <td><label for="gender">Giới tính</label></td>
             <td>
-              <input type="radio" name="gioitinh" id="nam" value="nam" />
+              <input
+                type="radio"
+                name="gioitinh"
+                id="nam"
+                value="nam"
+                checked
+              />
               <label for="nam">Nam</label>
               <input type="radio" name="gioitinh" id="nu" value="nu" />
               <label for="nu">Nữ</label>
@@ -48,7 +64,7 @@
           <tr>
             <td><label for="job">Nghề nghiệp</label></td>
             <td>
-              <select name="nghenghiep" id="">
+              <select name="nghenghiep" required>
                 <option value="Học sinh" selected>Học sinh</option>
                 <option value="Giảng viên">Giảng viên</option>
                 <option value="Bảo vệ">Bảo vệ</option>
@@ -58,18 +74,13 @@
           <tr>
             <td><label for="">Sở thích</label></td>
             <td>
-              <input type="checkbox" name="sothich[]" id="" value="Thể thao" />
+              <input type="checkbox" name="sothich[]" value="Thể thao" />
               <label for="">Thể thao</label>
-              <input type="checkbox" name="sothich[]" id="" value="Du lịch" />
+              <input type="checkbox" name="sothich[]" value="Du lịch" />
               <label for="">Du lịch</label>
-              <input type="checkbox" name="sothich[]" id="" value="Âm nhạc" />
+              <input type="checkbox" name="sothich[]" value="Âm nhạc" />
               <label for="">Âm nhạc</label><br />
-              <input
-                type="checkbox"
-                name="sothich[]"
-                id=""
-                value="Thời trang"
-              />
+              <input type="checkbox" name="sothich[]" value="Thời trang" />
               <label for="">Thời trang</label>
             </td>
           </tr>
@@ -83,5 +94,6 @@
         </table>
       </form>
     </div>
+    <script src="/scripts/validate.js"></script>
   </body>
 </html>

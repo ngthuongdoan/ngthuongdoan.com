@@ -13,9 +13,6 @@ include_once "clearcache.php";
 </head>
 
 <body>
-  <?php
-  if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
-  ?>
   <div class="container">
     <h2>Thêm sản phẩm mới</h2>
     <br />

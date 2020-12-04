@@ -15,7 +15,6 @@ include_once "clearcache.php";
 <body>
     <?php
 
-    if (!isset($_SESSION["matv"])) header("Location: Bai2.php");
     include_once "connection.php";
     openconnect();
     $id = $_GET["id"];

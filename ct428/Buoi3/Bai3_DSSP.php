@@ -14,7 +14,6 @@ include_once "clearcache.php";
 <body>
   <div class="container">
     <?php
-
     echo "<h1>Chào bạn " . $_SESSION["tendangnhap"] . "</h1>";
     ?>
     <p>Danh sách sản phẩm của bạn là: </p>
