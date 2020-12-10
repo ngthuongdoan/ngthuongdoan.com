@@ -57,14 +57,16 @@ body {
     &__menu {
       &:hover {
         #about__submenu {
-          display: block;
+          // display: block;
+          clip-path: inset(0 0 0 0);
         }
       }
     }
     &__submenu {
-      display: none;
+      // display: none;
       position: absolute;
-      transition: 1s all ease-in-out;
+      transition: 0.3s all ease-in-out;
+      clip-path: inset(0 0 100% 0);
       li {
         background-color: rgb(19, 42, 63);
         &:hover {
@@ -136,7 +138,7 @@ body {
     height: 100%;
     align-self: center;
     justify-self: center;
-    overflow: auto;
+    overflow: hidden;
     p {
       width: 80%;
     }

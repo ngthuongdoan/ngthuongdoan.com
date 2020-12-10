@@ -70,14 +70,16 @@ body {
 }
 
 .sidebar #about__menu:hover #about__submenu {
-  display: block;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .sidebar #about__submenu {
-  display: none;
   position: absolute;
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
 }
 
 .sidebar #about__submenu li {
@@ -170,7 +172,7 @@ body {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .content__overview p {
