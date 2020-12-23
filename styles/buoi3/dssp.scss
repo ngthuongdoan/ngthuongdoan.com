@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+#searchResult {
+  list-style-type: none;
+  position: absolute;
+  background-color: white;
+}
 
 .container {
   height: fit-content;

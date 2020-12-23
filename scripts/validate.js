@@ -8,10 +8,26 @@ let confirmError = document.getElementById("confirm-error");
 const usernameRegex = /^[A-Za-z][A-Za-z0-9]{5,14}$/gi;
 const passwordRegex = /^(?=.*[0-9])(?=.*[a-z]).{5,16}$/gi;
 
+let isValid = true;
+
+username.addEventListener("blur", async () => {
+  try {
+    const response = await fetch(
+      `/ct428/Buoi3/checkUsername.php?tendangnhap=${username.value}`
+    );
+    const msg = await response.json();
+    console.log(msg.status);
+    if (msg.status !== 200) {
+      isValid = false;
+    }
+    usernameError.innerText = msg.msg;
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  let isValid = true;
 
   if (!usernameRegex.test(username.value)) {
     usernameError.innerText =
@@ -37,6 +53,7 @@ form.addEventListener("submit", (e) => {
   if (isValid) {
     form.submit();
   } else {
+    alert("Invalid data. Please check again")
     console.log(
       usernameRegex.test(username.value),
       passwordRegex.test(password.value),
