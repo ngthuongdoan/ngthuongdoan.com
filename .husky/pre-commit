@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
+
+# Run the tsc command to make sure there are no TypeScript errors
+# Run the eslint command to make sure there are no ESLint errors
+# Format our code using prettier
+yarn tsc --noEmit && yarn eslint . && yarn prettier --write .
