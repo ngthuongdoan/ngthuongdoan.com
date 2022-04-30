@@ -5,7 +5,20 @@ module.exports = {
     './containers/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        swatch_1: '#fafafa',
+        swatch_2: '#b7c6c9',
+        swatch_3: '#161515',
+        swatch_4: '#c6b099',
+        swatch_5: '#5f5e5e',
+        swatch_6: '#b46e53',
+        swatch_7: '#5e2d1f',
+      },
+      fontFamily: {
+        'source-sans': "'Source Sans Pro', sans-serif",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
