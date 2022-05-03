@@ -1,6 +1,6 @@
 import { IconProps } from '.'
 
-const Jest: React.VFC<IconProps> = ({ size = 32 }) => {
+const Jest: React.FC<IconProps> = ({ size = 32 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

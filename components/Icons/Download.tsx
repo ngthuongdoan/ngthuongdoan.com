@@ -1,6 +1,6 @@
 import { IconProps } from '.'
 
-const Download: React.VFC<IconProps> = ({ size = 24 }) => {
+const Download: React.FC<IconProps> = ({ size = 24 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

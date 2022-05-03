@@ -1,6 +1,6 @@
 import { IconProps } from '.'
 
-const Linkedin: React.VFC<IconProps> = ({ size = 24 }) => {
+const Linkedin: React.FC<IconProps> = ({ size = 24 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
