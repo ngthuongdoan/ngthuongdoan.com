@@ -15,3 +15,7 @@ body {
   font-family: 'Lora', serif;
   background-color: #fafafa;
 }
+
+.slick-slide {
+  @apply flex justify-between items-start sm:p-8 rounded-xl select-none ml-4;
+}

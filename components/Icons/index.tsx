@@ -1,3 +1,4 @@
+import Arrow from './Arrow'
 import CSS3 from './CSS3'
 import Download from './Download'
 import Facebook from './Facebook'
@@ -22,10 +23,12 @@ import Vue from './Vue'
 export type IconProps = {
   size?: number
   color?: string
+  className?: string
   onClick?: () => void
 }
 
 export default {
+  Arrow,
   CSS3,
   Download,
   Facebook,

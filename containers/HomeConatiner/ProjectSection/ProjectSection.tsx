@@ -3,12 +3,30 @@ import ProjectCard from 'components/ProjectCard/ProjectCard'
 type ProjectSectionProps = {}
 
 const ProjectSection: React.FC<ProjectSectionProps> = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (
-    <section className="mb-20 pb-20 border-b-2 border-swatch_3 ">
-      <h1 className="text-center text-3xl">I am passionate about my work</h1>
+    <section className="mb-20 pb-20 border-b-2 border-swatch_3">
+      <div className="px-4 mx-auto sm:px-6 ">
+        {/* Header */}
+        <div className="text-center">
+          <h2 className=" text-3xl">
+            I am passionate about&nbsp;
+            <br className="hidden sm:block lg:hidden" />
+            my works
+          </h2>
 
-      <div className="flex flex-col items-center justify-center mt-16 px-16 flex-wrap gap-8">
-        <ProjectCard />
+          <blockquote className="mt-4">
+            <p className="inline italic text-gray-500 text-sm">
+              “Pleasure in the job puts perfection in the work.” – Aristotle
+            </p>
+          </blockquote>
+        </div>
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2 2xl:grid-cols-3 2xl:gap-10">
+          {new Array(10).fill(0).map((_, index: number) => (
+            <ProjectCard key={index} />
+          ))}
+        </div>
       </div>
     </section>
   )

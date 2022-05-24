@@ -1,4 +1,5 @@
 import AboutSection from './AboutSection/AboutSection'
+import EducationSection from './EducationSection/EducationSection'
 import IntroSection from './IntroSection/IntroSection'
 import ProjectSection from './ProjectSection/ProjectSection'
 
@@ -10,6 +11,7 @@ const HomeContainer: React.FC<HomeContainerProps> = () => {
       <IntroSection />
       <AboutSection />
       <ProjectSection />
+      <EducationSection />
     </>
   )
 }
