@@ -3,6 +3,8 @@ module.exports = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './containers/**/*.{ts,tsx}',
+    './constants/**/*.{ts,tsx}',
+    './types/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
