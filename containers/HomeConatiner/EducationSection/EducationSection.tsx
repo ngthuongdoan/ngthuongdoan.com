@@ -5,8 +5,8 @@ const EducationSection: React.FC<EducationSectionProps> = () => {
     <section className="mb-20 pb-20 border-b-2 border-swatch_3 ">
       <h1 className="text-center text-3xl">Education & Experience</h1>
 
-      <div className="flex flex-col items-center justify-center mt-16 px-16 flex-wrap gap-8">
-        <div className="flex w-full justify-between px-32">
+      <div className="flex flex-col items-center justify-center mt-16 px-4 md:px-16 flex-wrap gap-8">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 w-full justify-between px-4 md:px-32">
           <div className="max-w-lg">
             <h2 className="font-bold text-swatch_2 uppercase font-source-sans text-sm mb-8">
               Education

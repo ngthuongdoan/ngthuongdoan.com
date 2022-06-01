@@ -15,7 +15,7 @@ const MainLayout: React.FC<PropsWithChildren<MainLayoutProps>> = ({
 
       <div className="w-full min-h-screen bg-swatch_1">
         <Header />
-        <main className="w-full h-full px-20">{children}</main>
+        <main className="w-full h-full mx-auto md:px-20">{children}</main>
       </div>
     </div>
   )

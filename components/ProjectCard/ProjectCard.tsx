@@ -8,7 +8,7 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <a href="" className="relative block group h-96">
+    <div className="relative block group h-96">
       <span className="absolute inset-0 border-2 border-black border-dashed"></span>
 
       <div className="relative flex items-end h-full transition-transform transform bg-white border-2 border-black group-hover:-translate-x-2 group-hover:-translate-y-2">
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   )
 }
 

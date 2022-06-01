@@ -6,16 +6,16 @@ type IntroSectionProps = {}
 
 const IntroSection: React.FC<IntroSectionProps> = () => {
   return (
-    <section className="pt-20">
+    <section className="md:pt-20 pt-32 pb-20 mb-0 md:mb-20 border-b-2 border-swatch_3">
       <div className="text-center text-3xl">
         <h1>Eddie Doan</h1>
         <h1>Front End Developer</h1>
         <h1>Based in Vietnam</h1>
       </div>
 
-      <div className="flex items-center justify-between mt-6 px-16">
+      <div className="flex flex-col md:flex-row m-auto items-center justify-between mt-6 px-4 md:px-16">
         {/* Left Part */}
-        <div className="flex flex-col gap-12 max-w-[150px]">
+        <div className="flex flex-col gap-12 max-w-[150px] text-center md:text-left">
           <div>
             <h2 className="font-bold text-swatch_2 uppercase font-source-sans text-sm mb-8">
               Biography
@@ -69,7 +69,7 @@ const IntroSection: React.FC<IntroSectionProps> = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-72 overflow-hidden rounded-full border p-6 z-10">
+        <div className="hidden md:flex items-center justify-center w-72 overflow-hidden rounded-full border p-6 z-10">
           <Image
             src={MainImage}
             objectFit="cover"
@@ -77,7 +77,7 @@ const IntroSection: React.FC<IntroSectionProps> = () => {
           />
         </div>
         {/* Right Part */}
-        <div className="flex flex-col gap-12 max-w-[150px]">
+        <div className="flex-col gap-12 max-w-[150px] hidden md:flex">
           <div>
             <h2 className="font-bold text-swatch_2 uppercase font-source-sans text-sm mb-8">
               Tech Stack
